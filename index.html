@@ -93,10 +93,46 @@
         </div>
       </section>
       <!-- phone list added -->
-      <section
-        class="grid grid-cols-3 row-auto gap-10 items-center w-full my-20"
-        id="phone-container"
-      ></section>
+      <section class="w-full mx-auto flex items-center justify-center flex-col">
+        <span
+          class="loading loading-lg loading-spinner text-primary mt-40 hidden"
+          id="loading"
+        ></span>
+        <div
+          class="grid grid-cols-3 row-auto gap-10 items-center w-full my-20"
+          id="phone-container"
+        >
+          <!-- <div
+            class="p-5 border-2 border-[#cfcfcf] rounded-2xl flex flex-col items-center gap-5"
+          >
+            <div
+              class="bg-[#0d6efd0d] rounded-xl flex items-center justify-center py-10 w-full"
+            >
+              <img src="${phone.image}" alt="Iphone" />
+            </div>
+            <h1 class="text-2xl font-semibold">${phone.phone_name}</h1>
+            <p class="text-secondary text-sm text-center">
+              There are many variations of passages of available, but the
+              majority have suffered
+            </p>
+            <span class="text-lg font-semibold">Price: $900</span>
+            <button
+              class="bg-primary px-4 py-2 rounded-lg text-white font-semibold"
+              id="details"
+              onclick="my_modal_5.showModal()"
+            >
+              Read More
+            </button>
+          </div> -->
+        </div>
+        <button
+          class="bg-primary px-8 py-4 rounded-lg text-white font-semibold"
+          id="load-more"
+          onclick="showAllBtn()"
+        >
+          Load More
+        </button>
+      </section>
     </main>
     <!-- js file added -->
     <script src="./js/app.js"></script>
